@@ -1,0 +1,19 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+    <h1>Register</h1>
+
+    <form method="POST">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="johndoe@example.com" />
+
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" />
+
+        <label for="password-confirm">Password confirmation</label>
+        <input id="password-confirm" name="password-confirm" type="password" />
+
+        <button type="submit">Submit</button>
+
+    </form>
+{% endblock %}
